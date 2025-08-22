@@ -1,11 +1,11 @@
-// scripts/test-cli.js
+
 const hre = require("hardhat");
 
 async function main() {
-    // Récupérer 3 comptes depuis le node local
+
     const [owner, voter1, voter2] = await hre.ethers.getSigners();
 
-    // Attacher le contrat déployé (⚠️ remplace l’adresse ci-dessous par celle imprimée au déploiement)
+
     const CONTRACT_ADDRESS = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
     const Vote = await hre.ethers.getContractFactory("Vote");
     const vote = Vote.attach(CONTRACT_ADDRESS);
@@ -27,8 +27,8 @@ async function main() {
 
     // Simuler les votes
     console.log("\n--- Casting votes ---");
-    await vote.connect(voter1).vote(0); // voter1 vote pour candidat 0
-    await vote.connect(voter2).vote(1); // voter2 vote pour candidat 1
+    await vote.connect(voter1).vote(0);
+    await vote.connect(voter2).vote(1);
     console.log("Votes submitted.\n");
 
     // Lire les résultats
