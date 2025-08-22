@@ -18,6 +18,16 @@
   },
   "homepage": "https://github.com/jihed-garaouch/EstiamBlockChain#readme",
   "devDependencies": {
-    "hardhat": "^2.26.3"
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
+    "hardhat": "^2.26.3",
+    "react": "^19.1.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "@vitejs/plugin-react": "^5.0.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.12"
   }
 }
